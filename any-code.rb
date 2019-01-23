@@ -1,0 +1,1 @@
+%i[a b c].zip([1].cycle).to_h
