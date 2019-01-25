@@ -12,6 +12,10 @@ end
 
 predicate(:options) do |target|
   print target
+  false
+  if target
+    true
+  end
 end
 
 
