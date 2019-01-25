@@ -29,3 +29,9 @@ end
 class ExtensibleClass < ExtendedClass
   include_glob_methods
 end
+
+######### main
+
+t = ExtensibleClass.new
+
+t.global_ext_method

@@ -1,5 +1,10 @@
-require './ext_method'
+# require './ext_method'
+# require './hash_one'
+# require './block'
+# require './predicate'
+#
+require './arrays/extract_options'
 
-t = ExtensibleClass.new
 
-t.global_ext_method
+
+
