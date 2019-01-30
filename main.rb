@@ -2,7 +2,7 @@
 # require './ext_method'
 # require './hash_one'
 # require './block'
-# require './predicate'
+require './predicate'
 # require './modules'
 # require './super'
 

@@ -1,7 +1,7 @@
 require "active_support/core_ext/object"
 # .present? is a Rails method
 
-def predicate(target)
+def predicate?(target)
   @scope = { as: "like scope" }
   options = { as: "like options" }
 
@@ -10,7 +10,7 @@ def predicate(target)
   yield(eval(target.to_s))
 end
 
-predicate(:options) do |target|
+predicate?(:options) do |target|
   print target
   false
   if target
