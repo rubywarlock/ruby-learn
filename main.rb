@@ -3,7 +3,9 @@
 # require './block'
 # require './predicate'
 # require './modules'
-require './arrays/extract_options'
+require './super'
+
+# require './arrays/extract_options'
 
 
 
