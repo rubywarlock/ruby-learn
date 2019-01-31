@@ -4,15 +4,24 @@ module Parent
   end
 
   module Child
+    include Parent
+
     def child_puts
       puts "child def"
     end
   end
+
+  module Other
+    extend Parent
+  end
 end
 
-class Modules
-  extend Parent::Child, Parent
+class IClass
+  include Parent::Child
+  include Parent
 end
 
-Modules.parent_puts
-Modules.child_puts
+IClass.new.child_puts
+IClass.new.parent_puts
+
+IClass::Other.parent_puts

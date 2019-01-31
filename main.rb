@@ -3,10 +3,10 @@
 # require './hash_one'
 # require './block'
 # require './predicate'
-# require './modules'
+require './modules'
 # require './super'
 
-require './arrays/extract_options'
+# require './arrays/extract_options'
 
 
 
