@@ -3,8 +3,9 @@
 # require './hash_one'
 # require './block'
 # require './predicate'
-require './modules'
+# require './modules'
 # require './super'
+require './hash_each'
 
 # require './arrays/extract_options'
 
