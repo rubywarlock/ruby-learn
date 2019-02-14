@@ -5,7 +5,9 @@
 # require './predicate'
 # require './modules'
 # require './super'
-require './hash_each'
+# require './hash_each'
+# require './returns'
+require './conditions'
 
 # require './arrays/extract_options'
 
