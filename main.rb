@@ -1,3 +1,4 @@
+require 'benchmark'
 # require './yield'
 # require './ext_method'
 # require './hash_one'
@@ -7,7 +8,7 @@
 # require './super'
 # require './hash_each'
 # require './returns'
-require './conditions'
+require './conditions/builder'
 
 # require './arrays/extract_options'
 
