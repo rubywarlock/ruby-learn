@@ -8,7 +8,8 @@ require 'benchmark'
 # require './super'
 # require './hash_each'
 # require './returns'
-require './conditions/builder'
+#require './conditions/builder'
+require './procs/builder'
 
 # require './arrays/extract_options'
 
