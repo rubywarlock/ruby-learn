@@ -29,7 +29,9 @@ IClass::Other.parent_puts
 =end
 
 module SomeModule
-
+  def print_first
+    puts "first"
+  end
 end
 
 module OtherModule
@@ -54,8 +56,21 @@ module BuilderModule
   end
 end
 
-class IClass
-  extend BuilderModule::SomeModule
+module SomeModule
+  def print_second
+    puts "second"
+  end
 end
 
-IClass.other_puts
+class IClass
+  extend SomeModule
+end
+
+IClass.print_first
+IClass.print_second
+
+begin
+  IClass.other_puts
+rescue Exception => e
+  puts "Error #{e.message}"
+end
