@@ -8,7 +8,8 @@ require 'benchmark'
 # require './returns'
 #require './conditions/builder'
 # require './procs/builder'
-require './classes/builder'
+# require './classes/builder'
+require './custom/builder'
 
 # require './arrays/extract_options'
 
