@@ -17,7 +17,7 @@ module Blocks
 
   class Two
     def build_block(&block)
-      instance_eval(block)
+      instance_eval(&block)
     end
   end
 end

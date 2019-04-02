@@ -16,9 +16,8 @@ require 'benchmark'
 
 # require './arrays/extract_options'
 #
-autoload(:Blocks,'./blocks/builder')
+autoload(:Blocks,'./blocks/block')
 
-
-
-
-
+Blocks::Two.new.build_block do
+  puts "From block"
+end
