@@ -1,7 +1,6 @@
 require 'benchmark'
 # require './ext_method'
 # require './hashes/builder'
-# require './blocks/builder'
 # require './predicate'
 # require './modules'
 # require './super'
@@ -10,9 +9,14 @@ require 'benchmark'
 # require './procs/builder'
 # require './classes/builder'
 # require './custom/builder'
-require './loops/for'
+# require './loops/for'
+# require './date/unix'
+
+#require './blocks/builder'
 
 # require './arrays/extract_options'
+#
+autoload(:Blocks,'./blocks/builder')
 
 
 
