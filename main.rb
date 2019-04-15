@@ -7,7 +7,7 @@ require 'benchmark'
 # require './returns'
 # require './conditions/builder'
 # require './procs/builder'
-# require './classes/builder'
+require './classes/builder'
 # require './custom/builder'
 # require './loops/for'
 # require './date/unix'
@@ -15,9 +15,8 @@ require 'benchmark'
 #require './blocks/builder'
 
 # require './arrays/extract_options'
-#
-autoload(:Blocks,'./blocks/block')
 
-Blocks::Two.new.build_block do
-  puts "From block"
-end
+# autoload([:Blocks],['./blocks/block'])
+
+
+
