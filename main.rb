@@ -7,12 +7,13 @@ require 'benchmark'
 # require './returns'
 # require './conditions/builder'
 # require './procs/builder'
-require './classes/builder'
+
 # require './custom/builder'
 # require './loops/for'
 # require './date/unix'
 
-#require './blocks/builder'
+# require './blocks/builder'
+require './classes/builder'
 
 # require './arrays/extract_options'
 
