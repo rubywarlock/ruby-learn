@@ -1,2 +1,2 @@
-require './hashes/hash_each'
-require './hashes/hash_one'
+require_relative 'hash_each'
+require_relative 'hash_one'

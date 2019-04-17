@@ -1,1 +1,1 @@
-require './custom/any_methods'
+require_relative 'any_methods'

@@ -1,3 +1,3 @@
-require './conditions/until'
-require './conditions/while'
-#require './conditions/any'
+require_relative 'until'
+require_relative 'while'
+#require_relative 'any'

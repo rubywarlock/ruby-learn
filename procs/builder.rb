@@ -1,2 +1,2 @@
-require './procs/proc'
-require './procs/lambda'
+require_relative 'proc'
+require_relative 'lambda'

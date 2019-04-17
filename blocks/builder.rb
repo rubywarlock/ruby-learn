@@ -1,2 +1,2 @@
-# require './blocks/block'
-require './blocks/yield'
+# require_relative 'block'
+require_relative 'yield'
