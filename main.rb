@@ -5,7 +5,7 @@ require 'benchmark'
 # require './modules'
 # require './super'
 # require './returns'
-# require './conditions/builder'
+require './conditions/builder'
 # require './procs/builder'
 
 # require './custom/builder'
@@ -13,7 +13,7 @@ require 'benchmark'
 # require './date/unix'
 
 # require './blocks/builder'
-require './classes/builder'
+# require './classes/builder'
 
 # require './arrays/extract_options'
 
