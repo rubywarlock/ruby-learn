@@ -26,6 +26,30 @@ IClass.new.child_puts
 IClass.new.parent_puts
 
 IClass::Other.parent_puts
+
+module Fucl
+  module SubFucl
+    def self.sub_print
+      puts "sub"
+    end
+  end
+
+  class << self
+    def print
+      puts "facl"
+    end
+  end
+
+  def self.other_print
+    puts "other"
+  end
+end
+
+Fucl.print
+
+Fucl::other_print
+
+Fucl::SubFucl.sub_print
 =end
 
 module SomeModule
