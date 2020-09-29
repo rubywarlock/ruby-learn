@@ -1,5 +1,3 @@
-
-
 module MB
   module MA
     module ::MC
