@@ -16,3 +16,4 @@ class Class
 end
 
 Class.new.salute
+#Class.new.salute_without_log
