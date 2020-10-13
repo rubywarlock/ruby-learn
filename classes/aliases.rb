@@ -1,19 +1,21 @@
-class Class
-  def salute
-    puts "Aloha!"
-  end
+class A
+
 end
 
-class Class
-  def salute_with_log
+class B
+  def user_settings_tabs
+    puts "Aloha!"
+  end
+
+  def prepare_user_page_tabs
     puts "Calling method..."
-    salute_without_log
+    build_user_page_tabs
     puts "...Method called"
   end
 
-  alias_method :salute_without_log, :salute
-  alias_method :salute, :salute_with_log
+  alias_method :build_user_page_tabs, :user_settings_tabs
+  alias_method :user_settings_tabs, :prepare_user_page_tabs
 end
 
-Class.new.salute
+B.new.user_settings_tabs
 #Class.new.salute_without_log
