@@ -12,12 +12,15 @@ end
 
 class Test
   include ExportMethod
+  extend ExportMethod
+
+  iniy
 end
 
 Test.new
 
 class One < Test
-  #iniy
+
 
   def meth_one
     meth_two
