@@ -1,11 +1,7 @@
-a = nil
-b = 34
+a = [1, 2, 3, 4, 5]
 
-if (a ||= b) > 0
-  puts "cool #{a}"
-  a += 1
+result = a.any? do |el|
+  el == 6
 end
 
-a = a > b
-
-puts a
+puts result
