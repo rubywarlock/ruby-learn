@@ -25,5 +25,7 @@ end
 
 b = B.new
 
-b.ext.hello
-b.ext.hello
+
+b.ext # add method as Class method
+
+B.hello
