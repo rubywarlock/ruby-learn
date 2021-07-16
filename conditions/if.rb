@@ -2,8 +2,10 @@ def eq(v)
   false
 
   if v == "true"
-    true
+    if v == "true"
+      true
+    end
   end
 end
-
-puts eq("false") # nil
+r = eq("true") # true return, else nil
+puts r # nil
