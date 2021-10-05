@@ -6,7 +6,7 @@ module ExportMethod
   end
 
   def iniy
-    puts "iniy"
+    puts "iniy method"
   end
 end
 
@@ -33,17 +33,18 @@ end
 
 class One < Test
   def meth_one
-    meth_two
+    puts "#{meth_two} from meth_one"
   end
 
   def meth_two
-    puts "meth two"
+    "meth two"
   end
 end
 
 o = One.new
 
 o.meth_one
+o.inc_meth
 One.ext_meth
 One.new.inc_meth
 o.send(:inc_meth)
