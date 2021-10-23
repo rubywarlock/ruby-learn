@@ -71,10 +71,10 @@ def run
     end
 
     b.report "Array.while" do
-      a = array.dup
       times.times do |i|
         t = 0
-        a.while do |el|
+        shifting_a = array.dup
+        while el = shifting_a.shift
           t = el
         end
       end
