@@ -1,4 +1,3 @@
-require 'observer'
 class Observer
   def observe(original_method_name:, object:)
     observer_method = "observer_#{original_method_name}".to_sym
