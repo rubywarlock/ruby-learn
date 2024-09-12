@@ -1,16 +1,16 @@
 require 'observer'
 class Observer
-  def observe(method_name:, object:)
-    observer_method = "observer_#{method_name}".to_sym
-    original_method = "original_#{method_name}".to_sym
+  def observe(original_method_name:, object:)
+    observer_method = "observer_#{original_method_name}".to_sym
+    alias_method = "alias_#{original_method_name}".to_sym
 
     object.class_eval do
-      alias_method(original_method, method_name)
+      alias_method(alias_method, original_method_name)
 
       define_method(observer_method) do |*attr, **hash, &block|
         puts "===================================="
         puts "================ FROM OBSERVER ====="
-        puts("Observer Method for #{method_name}")
+        puts("Observer Method for #{original_method_name}")
         puts("attr: #{attr}")
         puts("hash: #{hash}")
         puts("class name: #{@name}")
@@ -18,10 +18,10 @@ class Observer
         yield(@name) if block_given?
 
         puts '------------------------------------'
-        send(original_method, *attr, **hash)
+        send(alias_method, *attr, **hash)
       end
 
-      alias_method method_name, observer_method
+      alias_method original_method_name, observer_method
     end
   end
 end
@@ -50,11 +50,11 @@ class A
 end
 
 observer = Observer.new
-observer.observe(method_name: :method_a, object: A) do |name|
+observer.observe(original_method_name: :method_a, object: A) do |name|
   puts "from block. name: #{name} method_a"
 end
 
-observer.observe(method_name: :method_b, object: A) do |name|
+observer.observe(original_method_name: :method_b, object: A) do |name|
   puts "from block. name: #{name} method_b"
 end
 
