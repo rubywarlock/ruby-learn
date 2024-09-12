@@ -50,13 +50,13 @@ end
 
 observer = Observer.new
 observer.observe(original_method_name: :method_a, object: A) do |name|
-  puts "from block. name: #{name} method_a"
+  puts "from block. name: #{name}. method_a"
 end
 
 observer.observe(original_method_name: :method_b, object: A) do |name|
-  puts "from block. name: #{name} method_b"
+  puts "from block. name: #{name}. method_b"
 end
 
-a = A.new("Class A Name")
+a = A.new("'Class A Name'")
 a.method_a("COOL")
 a.method_b
